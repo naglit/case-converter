@@ -144,4 +144,4 @@ setup.cfg
 README.html
 src/output/*
 spec.json
-files
+files.txt

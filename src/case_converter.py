@@ -14,7 +14,7 @@ def convert_files():
     __make_dir_for_output()
 
     # get file paths
-    files = [file.replace("\n", "") for file in filecontrol.read_file("files")]
+    files = [file.replace("\n", "") for file in filecontrol.read_file("files.txt")]
 
     # case conversion
     list(map(__convert, files))
