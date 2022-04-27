@@ -30,15 +30,15 @@ def __create_unique_output_dir_path():
 
 def __convert(filepath: str):
 
-    # read file
+    # read a file
     lines = filecontrol.read_file(filepath)
 
-    # convert
+    # convert cases in lines
     filename = os.path.basename(filepath)
     convert_func = __convert_cs if filename.endswith("xml") == False else __convert_xml
     pascalcase_lines = convert_func(lines)
 
-    # write file
+    # write a file
     output_path = os.path.join(unique_output_dir, filename)
     filecontrol.write_file(output_path, pascalcase_lines)
 
