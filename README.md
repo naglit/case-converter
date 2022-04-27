@@ -8,8 +8,8 @@ see https://github.com/okunishinishi/python-stringcase
 
 
 ## 手順
-1. main.pyのあるディレクトリに "files.txt" という名前のファイルを作成
-2. "files.txt" にケースを変更するファイルのパスを入力する
+1. ルートディレクトリにある `init.bat` をコマンドプロンプトで実行する
+2. `~/src/files.txt` というファイルにケースを変更するファイルのパスを記載する
   複数ファイル指定可能で、ファイルごとに改行する
   ```
   C:\inetpub\wwwroot\Sample\sample.cs
